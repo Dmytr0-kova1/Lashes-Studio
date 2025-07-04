@@ -1,5 +1,11 @@
+import DashboardPage from "./pages/DashboardPage/DashboardPage";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <DashboardPage />
+    </>
+  );
 }
 
 export default App;
