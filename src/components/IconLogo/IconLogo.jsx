@@ -2,7 +2,7 @@ import React from "react";
 
 const IconLogo = () => {
   return (
-    <svg width="100" height="100" viewBox="0 0 300.000000 300.000000">
+    <svg width="50" height="50" viewBox="0 0 300.000000 300.000000">
       <g
         transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
         fill="#000000"

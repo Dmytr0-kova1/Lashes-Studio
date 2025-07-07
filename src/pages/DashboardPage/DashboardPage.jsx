@@ -5,7 +5,7 @@ const DashboardPage = () => {
   return (
     <>
       <Header />
-      <Sidebar />
+      {/* <Sidebar /> */}
     </>
   );
 };
