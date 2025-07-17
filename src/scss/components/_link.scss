@@ -1,0 +1,12 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
+
+.link {
+  color: fn.get-color("main");
+}
+
+.active {
+  color: fn.get-color("button-hover");
+}

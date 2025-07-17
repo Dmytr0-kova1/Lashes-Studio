@@ -1,7 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import IconLogo from "../IconLogo/IconLogo";
-import Container from "../Container/Container";
-import Navigation from "../Navigation/Navigation";
+import IconLogo from "./IconLogo";
+import Container from "./Container";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
