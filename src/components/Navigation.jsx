@@ -5,12 +5,15 @@ const buildLinkClass = ({ isActive }) => clsx("link", isActive && "active");
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className="navigation">
       <NavLink className={buildLinkClass} to="/">
         Home
       </NavLink>
       <NavLink className={buildLinkClass} to="/catalog">
         Catalog
+      </NavLink>
+      <NavLink className={buildLinkClass} to="/aboutMe">
+        About me
       </NavLink>
     </nav>
   );
