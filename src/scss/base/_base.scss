@@ -7,8 +7,8 @@ body {
   @extend %main-text;
 
   font-family: var.$main-font, sans-serif;
-  color: fn.get-color("white-color");
-  background-color: fn.get-color("primary-color");
+  color: fn.get-color("primary-color");
+  background-color: fn.get-color("white-color");
 }
 
 button {
