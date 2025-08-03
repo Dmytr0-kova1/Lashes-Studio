@@ -1,19 +1,20 @@
 @use "sass:list";
 @use "../settings" as *;
-@use "../../../utils//mixins" as mx;
+@use "../../../utils/mixins" as mx;
+@use "../../../utils/functions" as fn;
 
 @if list.index($btn-types, hero) {
   .btn-hero {
-    background-color: #f07f2e;
+    background-color: fn.get-color("btn-color");
 
     &:active {
-      background-color: #d14a00;
+      background-color: fn.get-color("btn-active-color");
     }
 
     @media (hover: hover) {
       &:hover,
       &:focus {
-        background-color: #f15c27;
+        background-color: fn.get-color("btn-hover-color");
         box-shadow: 0 4px 10px 0 rgba(240, 127, 46, 0.25);
       }
     }
