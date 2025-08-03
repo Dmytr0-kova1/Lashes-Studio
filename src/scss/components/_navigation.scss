@@ -4,12 +4,12 @@
 @use "../utils/mixins" as mx;
 
 .navigation {
-  @include mx.mq("lg", "max") {
-    visibility: hidden;
-  }
-
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 15px;
+
+  @include mx.mq("lg", "max") {
+    visibility: hidden;
+  }
 }

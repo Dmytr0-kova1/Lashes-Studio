@@ -1,0 +1,25 @@
+@use "sass:list";
+@use "../settings" as *;
+@use "../../../utils//mixins" as mx;
+
+@if list.index($btn-types, hero) {
+  .btn-hero {
+    background-color: #f07f2e;
+
+    &:active {
+      background-color: #d14a00;
+    }
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus {
+        background-color: #f15c27;
+        box-shadow: 0 4px 10px 0 rgba(240, 127, 46, 0.25);
+      }
+    }
+
+    @include mx.mq("lg") {
+      margin-right: 200px;
+    }
+  }
+}

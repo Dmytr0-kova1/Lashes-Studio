@@ -1,0 +1,35 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../img/lashes_hero.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    @include mx.mq("lg") {
+      align-items: flex-end;
+    }
+  }
+
+  &-title {
+    @extend %main-title;
+
+    max-width: 500px;
+    color: fn.get-color("white-color");
+  }
+}
