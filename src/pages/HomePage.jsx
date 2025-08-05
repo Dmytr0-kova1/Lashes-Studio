@@ -1,5 +1,5 @@
 import Hero from "../components/Hero";
-import MyWorksList from "../components/MyWorksList";
+import MyWorksList from "../components/MyWorks/MyWorksList";
 
 const HomePage = () => {
   return (

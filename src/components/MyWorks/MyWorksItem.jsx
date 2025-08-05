@@ -30,7 +30,6 @@ function MyWorksItem({ images }) {
       <Swiper
         modules={[Navigation, Mousewheel, Autoplay]}
         spaceBetween={10}
-        centeredSlides={true}
         loop={true}
         navigation={true}
         mousewheel={true}
@@ -53,16 +52,17 @@ function MyWorksItem({ images }) {
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <img
-              src={img}
-              alt={`eyelash extensions ${index + 1}`}
-              width="200"
-              height="200"
-              onClick={() => {
-                setPhotoIndex(index);
-                setIsOpen(true);
-              }}
-            />
+            <div className="works-item">
+              <img
+                className="works-img"
+                src={img}
+                alt={`eyelash extensions ${index + 1}`}
+                onClick={() => {
+                  setPhotoIndex(index);
+                  setIsOpen(true);
+                }}
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
