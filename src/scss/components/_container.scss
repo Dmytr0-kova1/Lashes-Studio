@@ -17,4 +17,8 @@
     width: 1280px;
     padding: 0 16px;
   }
+
+  @include mx.mq("lg") {
+    width: 100%;
+  }
 }
