@@ -1,3 +1,5 @@
+import MyWorksItem from "./MyWorksItem";
+
 import myWorks1 from "../img/myWorks/myWorks-1.jpg";
 import myWorks2 from "../img/myWorks/myWorks-2.jpg";
 import myWorks3 from "../img/myWorks/myWorks-3.jpg";
@@ -11,18 +13,7 @@ const MyWorksList = () => {
   return (
     <section>
       <h2>My Works</h2>
-      <ul>
-        {images.map((img, index) => (
-          <li key={index}>
-            <img
-              src={img}
-              alt={`eyelash extensions ${index + 1}`}
-              width="200"
-              height="200"
-            />
-          </li>
-        ))}
-      </ul>
+      <MyWorksItem images={images} />
     </section>
   );
 };
