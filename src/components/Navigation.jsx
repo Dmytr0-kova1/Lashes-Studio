@@ -9,8 +9,8 @@ const Navigation = () => {
       <NavLink className={buildLinkClass} to="/">
         Home
       </NavLink>
-      <NavLink className={buildLinkClass} to="/catalog">
-        Catalog
+      <NavLink className={buildLinkClass} to="/services">
+        Services
       </NavLink>
       <NavLink className={buildLinkClass} to="/aboutMe">
         About me
